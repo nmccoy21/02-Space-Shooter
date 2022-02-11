@@ -1,15 +1,12 @@
 # Project Name
 
-Context and date
-
-Description
-
+"02 Space Shooter" for Project 2 in C220.
 ## Implementation
-Which features you included
-
+A very simple game that fulfills the basic and some advanced requirements of the project. I used sprites from Kenney.NL and a custom soundtrack that my friend and I made.
 ## References
-
+kenney.nl for sprites
+Sam Allspaw for music 
 ## Future Development
 
 ## Created by
-Jason Francis
+Nolan McCoy

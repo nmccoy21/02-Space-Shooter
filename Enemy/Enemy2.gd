@@ -1,6 +1,6 @@
 extends KinematicBody2D
 
-var x_positions = [100,150,200,500,550]
+var y_positions = [100,150,200,500,550]
 var initial_position = Vector2.ZERO
 var direction = Vector2(1.5,0)
 var wobble = 30.0
@@ -14,13 +14,13 @@ onready var Bullet = load("res://Enemy/Bullet.tscn")
 onready var Explosion = load("res://Effects/Explosion.tscn")
 
 func _ready():
-	initial_position.y = -100
-	initial_position.x = x_positions[randi() % x_positions.size()]
+	initial_position.x = -100
+	initial_position.y = y_positions[randi() % y_positions.size()]
 	position = initial_position
 
 func _physics_process(_delta):
 	position += direction
-	position.y = initial_position.y + speed*wobble
+	position.y = initial_position.y + sin(position.x/20)*wobble
 	position.x = wrapf(position.x, 0, Global.VP.x)
 	position.y = wrapf(position.y, 0, Global.VP.y)
 

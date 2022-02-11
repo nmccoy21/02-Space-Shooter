@@ -2,7 +2,7 @@ extends Node
 
 var VP = Vector2.ZERO
 var score = 0 
-var time = 100
+var time = 67
 var lives = 5
 
 func _ready():
